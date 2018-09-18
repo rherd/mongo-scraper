@@ -63,7 +63,7 @@ db.once("open", function() {
 // Routes
 // ======
 
-//GET requests to render Handlebars pages
+//get requests to render Handlebars pages
 app.get("/", function(req, res) {
   Article.find({"saved": false}, function(error, data) {
     var hbsObject = {
@@ -109,7 +109,10 @@ app.get("/scrape", function(req, res) {
       result.summary = $(element).find("li").text();
       
       if (result.title && !result.summary) {
-        result.summary = "No summary provided, see full article."
+        result.summary = $(element).find("p").text();
+        if (result.title && !result.summary) {
+          result.summary = "No summary provided! See full article."
+        }
       };
 
       result.link = "https://www.nytimes.com" + $(element).find("a").attr("href");
