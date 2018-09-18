@@ -1,0 +1,31 @@
+{
+  "name": "mongo-scraper",
+  "version": "1.0.0",
+  "description": "## Overview An app that scrapes articles from the New York Times website and lets users save articles and leave comments on the latest news.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.15",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rherd/mongo-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rherd/mongo-scraper/issues"
+  },
+  "homepage": "https://github.com/rherd/mongo-scraper#readme"
+}
