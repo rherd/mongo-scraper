@@ -9,6 +9,7 @@ $("#scrape").on("click", function() {
     })
 });
 
+// not sure what this is for
 //remove navbar class
 // $(".navbar-nav li").click(function() {
 //    $(".navbar-nav li").removeClass("active");

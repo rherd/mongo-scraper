@@ -15,3 +15,23 @@ body {
 #scrape {
     margin: 8px 0px;
 }
+
+.jumbotron {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+    font-family: 'Shrikhand', cursive;
+
+}
+
+.panel-default {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.modal-title {
+    font-family: 'Shrikhand', cursive; 
+}
